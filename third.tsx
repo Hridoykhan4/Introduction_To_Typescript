@@ -1,0 +1,1 @@
+const third: string = "Hi, third" 
