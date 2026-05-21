@@ -10,6 +10,12 @@ const student: Student = {
   isLearning: true,
 };
 
+const stu: Student = {
+  name: "HH",
+  age: 11,
+  isLearning: false,
+};
+
 function greetStudent(name: string): string {
   return `Hello, ${name}! Welcome to TypeScript.`;
 }
