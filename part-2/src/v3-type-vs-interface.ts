@@ -39,6 +39,64 @@ interface Animal {
     species: string;
 }
 
-interface Cat {
-    
+interface Cat extends Animal {
+  breed: string;
 }
+// animal e ja ache ami cat e niye ashbo, jeTa abar type alias e kora jay na
+
+const cat: Cat = {
+    breed: "Persian",
+    species: 'cat'
+}
+
+// console.log(cat);
+
+// type er moddhe amra kibhabe extend korbo, union er ulta kaj korbo ekhane 
+type Vehicle = {
+    brand: string;   
+}
+
+// Ekhane amra must ensure korbo j ekhane brand thaktei hbe "Vehicle &" diye
+type Car = Vehicle & {
+    model: string
+}
+
+const car: Car  = {
+    model: 'Toyota',
+    brand: "BMW" 
+}
+console.log(car);
+
+/* 
+
+    -----------------
+    Interface e amra extend korbo r type alias e amra use korbo & (intersection ) "&" symbol used to perform intersection
+
+*/
+
+
+/* ending */
+
+interface IEmployee {
+    name: string
+}
+
+interface IEmployee {
+    id: number
+}
+
+// duita interface same naam e ase taw merge hoye gese , but type e hy na
+const employee : IEmployee  = {
+    name: 'Salam',
+    id: 101,
+}
+
+// Union er jnne amra type alias use korbo must must must
+// This is not valid
+// type TEmployee = {
+//     name: string
+// }
+
+// type TEmployee = {
+//     id: 101
+// }
