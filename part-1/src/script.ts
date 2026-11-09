@@ -36,7 +36,7 @@ const arr2: Array<string> = ["Jamal"];
 // ekta array er moddhe multiple data type rakhte chaile union use korbo
 
 // Tuple is also an array in runtime, jar specific length thakbe (fix) , kon position e kon type er data boshebe eTao mention thakbe
-
+    
 const dhakaLatLong: readonly [number, number] = [23.8103, 90.4125];
 
 //  readonly thakar karone arr er upor kono operation kora jabe na, kinda fixed, kew change korte parbe na,  readonly modifier diye disi amra
@@ -47,7 +47,7 @@ const dhakaLatLong: readonly [number, number] = [23.8103, 90.4125];
 const concatName = (firstName: string, lastName?: string) => {
   if (!lastName) return firstName;
   return firstName + " " + lastName;
-};
+};  
 
 // EKhane ami ekTa argument dile ts raaag korbe, bolbe 2 Ta na diye 1 Ta keno dili
 

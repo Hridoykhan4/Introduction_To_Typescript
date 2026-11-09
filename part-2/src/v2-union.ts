@@ -34,7 +34,7 @@ const userRole :  Role = 'admin'
 /* 
 Object er type e o amra union korte pari
 
-amar duita alada alada type er object ase user either jekono object er hote pare, shei object er ki ki data type ase oiTar upor base kore sheTar upor base kore amader object er shape Ta ki hbe she jinishTao amaderk typescript determine kore dicche & dfalso poviding type safety
+amar duita alada alada type er object ase user either jekono object er hote pare, shei object er ki ki data type ase oiTar upor base kore  amader object er shape Ta ki hbe she jinishTao amaderk typescript determine kore dicche & also providing type safety
 */
 type Admin = { id: number, role: 'admin', privileges: string[] }
 type Member = {id: number, role: 'member', plans: string[]};

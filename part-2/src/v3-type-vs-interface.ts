@@ -5,7 +5,7 @@ type id = number | string;
 
 //! interface id = number
 //! interface id {
-
+    // number
 // }
 
 type Role = 'admin' | 'manager' | 'recruiter';
