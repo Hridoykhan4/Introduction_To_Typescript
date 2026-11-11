@@ -1,0 +1,1 @@
+import './v2-class-vs-object.js'

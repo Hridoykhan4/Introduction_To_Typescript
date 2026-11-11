@@ -47,7 +47,7 @@ const loggedInUser: User = {
   name: "Mir",
   address: {
     street: "ABC",
-  },
+  },      
 };
 
 

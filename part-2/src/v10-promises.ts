@@ -23,7 +23,7 @@ const fetchUser = async () : Promise<User | undefined> => {
         // amra api response type er data py User type er na, data: any hye ase
     
         const data =  (await res.json()) as ApiResponse<User>
-    
+        
         if(!res.ok || !data.success) {
             throw new Error(`Failed to Fetch User Data: ${data.message}`);
         }

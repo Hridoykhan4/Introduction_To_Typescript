@@ -8,7 +8,7 @@
 // }
 
 // Amra ei function k reuasable kori, so here come generic 
-const wrapInArray = <T> (value: T) => {
+const wrapInArray = <T> (value: T) : T => {
     return [value] 
 }
 
