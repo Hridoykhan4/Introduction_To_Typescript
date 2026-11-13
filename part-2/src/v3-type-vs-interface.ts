@@ -1,7 +1,7 @@
 // Interface is generally connected to objects
 //  Type alias is more connected to literals, union, tuples, primitives
 
-type id = number | string;
+type id = number | string;  
 
 //! interface id = number
 //! interface id {

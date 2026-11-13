@@ -8,7 +8,7 @@
 // }
 
 // Amra ei function k reuasable kori, so here come generic 
-const wrapInArray = <T> (value: T) : T => {
+const wrapInArray = <T> (value: T) : T[] => {
     return [value] 
 }
 
@@ -109,5 +109,7 @@ const user: ApiResponse<User> = {
 /* Amader ekhane repetition hcche I mean success, statuscode , data o hcche shape Ta ek2 different
 amake success, statusCode dui jaygay dekha lagtasena
 hoytw amar user er type dorkar hy or blog er ami api interface diye manage kore felbo, apitype er purata type er dorkar nai
-
+ 
 */
+
+

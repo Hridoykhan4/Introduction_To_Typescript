@@ -18,13 +18,13 @@ const something: unknown = "Hello World";
 // something2 = num;
 
 // Ekhn jodi ami void boshai, null dileo same
-let nothing: void;
-// const num : number = 10;
-// Type 'number' is not assignable to type 'void'
-// nothing = num;
+  let nothing: void;
+  // const num : number = 10;
+  // Type 'number' is not assignable to type 'void'
+  // nothing = num;
 
-let something3: unknown;    
-something3 = nothing;
+  let something3: unknown;    
+  something3 = nothing;
 // Amra core types er moddhe void korte parbo na, void er moddhe core types korte parbo na kin2 ami top types er moddhe je kono kisu reassign korte parbo
 
 /* Nullish Types , nullish  type itself ekTa type */
