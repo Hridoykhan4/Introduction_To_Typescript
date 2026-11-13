@@ -140,7 +140,7 @@ const user : User = {
   badges:  ['Kamal', 3]
 }
 // Property 'push' does not exist on type 'readonly [string, number]'.
-// user.badges.push('Hi')
+user.badges.push('Hi')
 
 // user.email = 'mir@gmail.com'
 
@@ -178,7 +178,6 @@ type UserName = string;
 type TUser = {
   name: UserName;
   age: number;
-
   address: Address
 }
 
