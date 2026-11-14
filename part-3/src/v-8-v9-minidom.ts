@@ -71,7 +71,7 @@ formElement.appendChild(submitButton)
 // console.log(submitButton.render());
 
 console.log(formElement.render());
-
+    
 const rootElement = document.getElementById('root')
 if(rootElement) {
     rootElement.innerHTML = formElement.render()

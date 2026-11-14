@@ -25,7 +25,7 @@ class Employee {
 class Manager extends Employee {
   // name: string;
   // baseSalary: number;
-  // teamCount: number
+  // teamCount: number  
 
   // Constructors for derived classes must contain a super call.
   constructor(

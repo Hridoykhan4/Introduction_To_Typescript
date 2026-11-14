@@ -2,7 +2,7 @@
 
 // * Access Modifier dey.
 // Public
-// Private strict  (class er baire property access kora jane na)
+// Private strict  (class er baire property access kora jabe na)
 // Protected (এটি private-এর মতোই সুরক্ষিত, তবে একটি বিশেষ ছাড় আছে। যে ক্লাসে এটি তৈরি হয়েছে সেখানে তো ব্যবহার করা যাবেই, পাশাপাশি এই ক্লাসকে উত্তরাধিকার সূত্রে যারা পাবে (Child Class বা Sub-class), তারাও এটি ব্যবহার করতে পারবে। কিন্তু বাইরের কেউ পারবে না )
 // readonly access modifier
 
@@ -18,10 +18,10 @@
 
 // const employee = new Employee('Mir', 20000)
 
-// // Amake etak protect korte hbe, protect korte hbe. Ami controlled korbo eTak.
-// // JS protect korte dey na, js e ei private er concept nai. so ancient js dev ra _ mark kortw just bujhanor jnne 
+// Amake etak protect korte hbe, Ami controlled korbo eTak.
+// JS protect korte dey na, js e ei private er concept nai. so ancient js dev ra _ mark kortw just bujhanor jnne 
 
-// // Property '#salary' is not accessible outside class 'Employee' because it has a private identifier.ts(18013)
+// Property '#salary' is not accessible outside class 'Employee' because it has a private identifier.ts(18013)
 // employee.#salary = -500
 
 // class Employee {
@@ -73,7 +73,7 @@ class Employee  {
         private _baseSalary: number
     ) {
         // this.name = name;
-        // this._baseSalary = _baseSalary
+        // this._baseSalary = _baseSalary   
     }
 
     get baseSalary() : number {
@@ -88,7 +88,7 @@ class Employee  {
 
     getSalaryWithBonus () : number {
         return this._baseSalary + 5000
-    }
+    }   
 
     setSalaryWithBonus (bonus : number) : number {
         return this._baseSalary + bonus
