@@ -83,3 +83,60 @@
 // }
 
 // updateProfile('101', {name: "Jamal"})
+
+interface Config {
+  apiKey?: string;
+  timeOut?: number;
+}
+
+const initialize = (config : Required<Config>) => {}
+
+// initialize({apiKey: '123123'})
+
+interface Product {
+  id: number;
+  name: string;
+  price: number;
+  description: string;
+}
+
+type ProductOverview = Pick<Product, 'name' | 'description'>
+
+const preview : ProductOverview = {
+    description: "",
+    name: ""
+}
+
+// Omit
+
+interface Employee {
+  id: number;
+  name: string;
+  salary: number;
+  nid: string;
+}
+
+type PublicEmployee = Omit<Employee, 'salary' | 'nid'>
+
+const employee : PublicEmployee = {
+    id: 21,
+    name: 'Salam'
+}
+
+
+// Record
+
+type Environment = 'development' | "staging"  | "production"
+
+// interface IEnvironment {
+//     development: string;
+//     staging: string;
+//     production: string;
+// }
+
+const apiURLs : Record<Environment, string> = {
+     development: 'ss',
+     production:"",
+     staging: '',
+    //  testing: ''
+}
